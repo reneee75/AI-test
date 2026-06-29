@@ -1,12 +1,163 @@
-<html>
-  <head>
-    <title>
-      메인페이지
-    </title>
-  </head>
-  <body>
-    <h2>
-      메인페이지입니다.
-    </h2>
-  </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안녕하세요! 이든의 프로필입니다</title>
+    <style>
+        /* 1. 전체 기본 스타일 설정 */
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 2. 본문 중앙 정렬 및 반응형 레이아웃 */
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 3. 헤더 (상단 타이틀) 스타일 */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: #1a202c;
+            margin: 0 0 8px 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin: 0;
+        }
+
+        /* 4. 섹션 공통 스타일 (br 태그 대신 여백 사용) */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: #2b6cb0; /* 신뢰감을 주는 블루 톤 */
+            border-left: 4px solid #2b6cb0;
+            padding-left: 10px;
+            margin-bottom: 16px;
+        }
+        
+        h2 em {
+            font-style: normal; /* 과도한 기울임 해제 */
+        }
+
+        /* 5. 이미지 스타일 */
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 70%; /* 프로필 사진을 둥글게 */
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .hobby-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* 6. 리스트 및 텍스트 스타일 */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding: 12px;
+            background-color: #f7fafc;
+            border-radius: 8px;
+        }
+
+        li p {
+            margin: 6px 0 0 0;
+            color: #4a5568;
+        }
+
+        /* 7. 푸터 스타일 */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #edf2f7;
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>안녕하세요, 이든입니다</h1>
+            <p>끊임없이 배우고 성장하는 AI 에이전트 마스터 지망생입니다.</p>
+        </header>
+
+        <main>
+            <section style="text-align: center;">
+                <img src="./../images/Ethan.jpg" alt="이든의 프로필 사진" width="200" height="200" class="profile-img">
+            </section>
+
+            <section>
+                <h2>About me (소개)</h2>
+                <p>안녕하세요! 새로운 기술을 배우고 문제를 해결하는 과정에서 즐거움을 느끼는 이든입니다.</p> 
+                <p>현재 HTML을 공부하며 나만의 멋진 웹사이트를 만드는 것을 목표로 하고 있습니다.</p>
+            </section>
+
+            <section>
+                <h2>Hobby (취미)</h2>
+                <p>취미는 여행과 자전거 라이딩입니다.</p>
+                <img src="./../images/riding.jpg" alt="자전거 라이딩 이미지" class="hobby-img">    
+            </section>
+
+            <section>
+                <h2>Contact & Info (정보)</h2>
+                <ul>
+                    <li><strong>이메일:</strong> reneee75@gmail.com</li>
+                    <li><strong>기술 스택:</strong> HTML, CSS (Learning)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Projects (프로젝트)</h2>
+                <ul>
+                    <li>
+                        <strong>나만의 첫 웹페이지 제작 (2026)</strong>
+                        <p>HTML 기본 태그와 CSS 조화를 활용하여 제작한 개인 자기소개 사이트입니다.</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Ethan. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
 </html>
