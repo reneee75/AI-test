@@ -45,7 +45,7 @@
             margin: 0;
         }
 
-        /* 4. 섹션 공통 스타일 (br 태그 대신 여백 사용) */
+        /* 4. 섹션 공통 스타일 */
         section {
             margin-bottom: 35px;
         }
@@ -57,7 +57,7 @@
             padding-left: 10px;
             margin-bottom: 16px;
         }
-        
+
         h2 em {
             font-style: normal; /* 과도한 기울임 해제 */
         }
@@ -66,8 +66,10 @@
         .profile-img {
             display: block;
             margin: 0 auto;
-            border-radius: 70%; /* 프로필 사진을 둥글게 */
-            object-fit: cover;
+            border-radius: 50%; /* 70% 대신 완벽한 원(50%)으로 수정 */
+            width: 200px;       /* 고정 너비 */
+            height: 200px;      /* 고정 높이 */
+            object-fit: cover;  /* 비율이 깨지거나 찌그러지지 않도록 방지 */
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
@@ -111,7 +113,6 @@
 <body>
 
     <div class="container">
-
         <header>
             <h1>안녕하세요, 이든입니다</h1>
             <p>끊임없이 배우고 성장하는 AI 에이전트 마스터 지망생입니다.</p>
@@ -119,7 +120,7 @@
 
         <main>
             <section style="text-align: center;">
-                <img src="./images/Ethan.jpg" alt="이든의 프로필 사진" width="200" height="200" class="profile-img">
+                <img src="./images/Ethan.jpg" alt="이든의 프로필 사진" class="profile-img">
             </section>
 
             <section>
@@ -156,7 +157,6 @@
         <footer>
             <p>&copy; 2026 Ethan. All rights reserved.</p>
         </footer>
-
     </div>
 
 </body>
